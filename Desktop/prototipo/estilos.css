@@ -1,0 +1,63 @@
+
+body {
+    background: linear-gradient(to bottom, #8cc6ec, #495ed6);
+    /* Cambia los colores según tus preferencias */
+    margin: 0;
+    padding: 0;
+  }
+
+
+  header {
+    background-color: rgb(64, 133, 179);
+    position: relative;
+    left: 0px;
+    margin: 50px auto;
+    width: 1300px; /* Agregué "px" para especificar los píxeles */
+    height: 100px; /* Agregué "px" para especificar los píxeles */
+    text-align: center;
+    color: whitesmoke;
+  }
+  #TITULO {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+
+  #imagen2-container {
+    position: absolute;
+    top: 71px;
+    left: 1245px;
+  }
+
+  #imagen3-container{
+    position: relative;
+    left: 25px;
+  }
+  #imagen4-container{
+    position: relative;
+    left: 25px;
+  }
+  #imagen5-container{
+        position: absolute;
+        top: 200px;
+        left: 900px;
+      
+  }
+  #imagen6-container{
+    position: absolute;
+    top: 200px;
+    left: 1100px;
+  
+}
+#imagen7-container{
+    position: absolute;
+    top: 400px;
+    left: 900px;
+  
+}
+
+
+  
