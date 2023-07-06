@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para el perfil */
+  .profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .profile img {
+    width: 150px; /* Tamaño de la foto del perfil */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .profile h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .profile p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #888;
+  }
+  
+  /* Estilos para las opciones superiores */
+  .top-options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .top-options a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Estilos para el contenedor de las opciones */
+  .options-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .options-container a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .options-container a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos para el contenedor del celular */
+  .phone-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .phone-container .screen {
+    padding: 20px;
+  }
+  
+  .phone-container .config-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
