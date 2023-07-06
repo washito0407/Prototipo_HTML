@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>Mi Perfil</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      background-color: #a57e45; /* Cambia el valor a tu color deseado */
+    }
+  </style>
+  <style>
+    /* Estilos para el perfil */
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .profile img {
+      width: 150px; /* Tamaño de la foto del perfil */
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .profile h2 {
+      margin: 0;
+    }
+    .profile p {
+      margin: 10px 0;
+    }
+    .profile .description {
+      font-style: italic;
+      color: #888;
+    }
+    .profile .options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .profile .options a {
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Estilos para las opciones superiores */
+    .top-options {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .top-options a {
+      margin-right: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Estilos para el contenedor del celular */
+    .phone-container {
+      background-color: #000;
+      padding: 20px;
+      border-radius: 20px;
+      width: 360px;
+      margin: 0 auto;
+      margin-top: 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .phone-container .screen {
+      background-color: #FFF;
+      border-radius: 10px;
+      padding: 20px;
+    }
+</style>
+</head>
+<body>
+  <div class="phone-container">
+    <div class="screen">
+      <div class="profile">
+        <h2>Mi Perfil</h2>
+        <textarea id="description" class="description" placeholder="Pequena descripcion" onfocus="clearDescription()"></textarea>
+      </div>
+
+      <div class="top-options">
+        <a href="salir.html">Salir de la aplicacion</a>
+      </div>
+
+      <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Foto de perfil"> <!-- Reemplaza con la URL de la imagen -->
+        <h2>Nombre Apellido</h2>
+        <p class="Bienvenido">En este diario puedes encontrarte contigo mismo <br>y recuerda que siempre es mejor poner la felicidad, como la tipica frase del pobre, <br>a pesar de que lo es quiere vivir como rico.</p>
+        <button onclick="toggleOptions()">Configuracion</button>
+          <div id="options" class="options">
+            <a href="volver a notas.html">Volver a notas</a>
+            <a href="cerrar_sesion.html">Cerrar sesion</a>
+            <a href="ayuda.html">Ayuda</a>
+            <a href="datos_personales.html">Datos personales</a>
+            <script>
+              // Función para mostrar u ocultar las opciones de configuración
+              function toggleOptions() {
+                var options = document.getElementById("options");
+                if (options.style.display === "none") {
+                  options.style.display = "flex";
+                } else {
+                  options.style.display = "none";
+                }
+              }
+            </script>
+            </head>
