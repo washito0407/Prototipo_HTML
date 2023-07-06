@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selector de preferencias</title>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+    
+    .selector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    
+    .option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .option img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+    
+    .submit-button {
+      margin-top: 40px;
+    }
+  </style>
+  <script>
+    function redirectToPage() {
+      // Obtener la página de destino deseada
+      var selectedPage = document.getElementById("destination-select").value;
+
+      // Redirigir a la página seleccionada
+      window.location.href = selectedPage;
+    }
+  </script>
+</head>
+<body>
+  <div class="selector">
+    <h1 class="title">Selector de preferencias</h1>
+    <form>
+      <div class="option">
+        <label>
+          <img src="entertainment.png" alt="Entretenimiento">
+          <input type="checkbox" name="preferencias[]" value="entretenimiento"> Entretenimiento
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <img src="sports.png" alt="Deportes">
+          <input type="checkbox" name="preferencias[]" value="deportes"> Deportes
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <img src="music.png" alt="Música">
+          <input type="checkbox" name="preferencias[]" value="musica"> Música
+        </label>
+      </div>
+      <input class="submit-button" type="button" value="Enviar" onclick="redirectToPage()">
+    </form>
+  </div>
+</body>
+</html>
